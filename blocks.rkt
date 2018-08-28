@@ -4,16 +4,13 @@
 
 (define BLOCK-SIZE 22)
 
-(define WHITE-SQUARE
-  (square BLOCK-SIZE 'solid "white"))
-
 (define (block color)
   (overlay (square (- BLOCK-SIZE 2) 'solid color)
-           WHITE-SQUARE))
+           (square BLOCK-SIZE 'solid "white")))
 
 (define CYAN-BLOCK (block "light blue"))
 (define BLUE-BLOCK (block "cornflowerblue"))
-(define MAGENTA-BLOCK (block "magenta"))
+(define VIOLET-BLOCK (block "violet"))
 (define GOLD-BLOCK (block "goldenrod"))
 (define GREEN-BLOCK (block "darkseagreen"))
 (define PURPLE-BLOCK (block "purple"))
@@ -39,8 +36,8 @@
 ;;     L
 ;;
 (above/align "left"
-             (beside MAGENTA-BLOCK MAGENTA-BLOCK MAGENTA-BLOCK)
-             MAGENTA-BLOCK)
+             (beside VIOLET-BLOCK VIOLET-BLOCK VIOLET-BLOCK)
+             VIOLET-BLOCK)
 
 ;; O : OO     (yellow)
 ;;     OO
